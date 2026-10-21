@@ -1,6 +1,6 @@
 ---
 layout: default
-title: asteriskTXT
+title: *TXT
 description: Quick Notes — Capture Anything, Anywhere
 ---
 
