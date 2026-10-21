@@ -1,6 +1,6 @@
 ---
 layout: default
-title: *TXT
+title: \*TXT
 description: Quick Notes — Capture Anything, Anywhere
 ---
 
