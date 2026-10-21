@@ -1,0 +1,6 @@
+title: *TXT
+description: Quick Notes — Capture Anything, Anywhere
+theme: jekyll-theme-cayman
+
+# Hides the "Download .zip / .tar.gz" buttons in the hero.
+show_downloads: false

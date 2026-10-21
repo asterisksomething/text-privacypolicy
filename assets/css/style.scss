@@ -1,0 +1,90 @@
+---
+# Recolors jekyll-theme-cayman to match the *TXT app icon:
+# warm paper grays, a lighter folded-paper edge, and charcoal ink.
+---
+
+// Icon SVG palette: paper #C8C3BB, back paper #B8B3AB, fold #D0CCC5,
+// third paper #A8A39B, ink #292827.
+// Cayman declares these with !default, so overrides must precede the import.
+$header-heading-color:      #292827;
+$header-bg-color:           #C8C3BB;
+$header-bg-color-secondary: #D0CCC5;
+$section-headings-color:    #292827;
+$body-link-color:           #292827;
+
+@import "{{ site.theme }}";
+
+/* ---------------------------------------------------------------
+   Explicit overrides, in case the theme's variables aren't !default.
+   Uses the icon’s paper and fold colors for the header gradient.
+   --------------------------------------------------------------- */
+
+.page-header {
+  background-color: #C8C3BB;
+  background-image: linear-gradient(180deg, #C8C3BB 0%, #D0CCC5 100%);
+  color: #292827;
+}
+
+.project-name {
+  color: #292827;
+  font-weight: 700;
+}
+
+.project-tagline {
+  color: #292827;
+  opacity: 1;
+}
+
+/* Charcoal buttons on the warm paper header. */
+.page-header .btn {
+  color: #292827;
+  border-color: rgba(41, 40, 39, 0.4);
+  background-color: rgba(208, 204, 197, 0.6);
+
+  &:hover {
+    color: #000000;
+    border-color: rgba(41, 40, 39, 0.7);
+    background-color: rgba(208, 204, 197, 0.9);
+  }
+}
+
+/* Charcoal headings, links, and bullets echo the icon’s ink. */
+.main-content {
+  h1, h2, h3, h4, h5, h6 { color: #292827; }
+  a { color: #292827; text-decoration: underline; }
+  a:hover { color: #000000; }
+}
+.main-content ul li::marker { color: #292827; }
+
+/* Rounded app icon. */
+.app-icon {
+  border-radius: 22%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+}
+
+/* Screenshot strip */
+.shots img {
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+  .page-header {
+    background-color: #292827;
+    background-image: linear-gradient(180deg, #292827 0%, #000000 100%);
+    color: #D0CCC5;
+  }
+  .project-name { color: #D0CCC5; }
+  .project-tagline { color: #C8C3BB; }
+  .page-header .btn {
+    color: #D0CCC5;
+    border-color: rgba(200, 195, 187, 0.4);
+    background-color: rgba(200, 195, 187, 0.08);
+
+    &:hover {
+      color: #D0CCC5;
+      border-color: rgba(200, 195, 187, 0.7);
+      background-color: rgba(200, 195, 187, 0.18);
+    }
+  }
+}
