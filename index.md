@@ -6,7 +6,7 @@ description: Quick Notes — Capture Anything, Anywhere
 
 # Privacy Policy
 
-**Last Updated: October 20, 2026**
+**Last Updated: October 24, 2026**
 
 *TXT ("asterisk text") is a notes app that keeps your notes as plain text files in your own storage. It does not require an account and does not collect your personal information on servers operated by the developer. This Privacy Policy explains how information is handled when you use *TXT on iPhone, iPad, Mac, and Apple Watch.
 
@@ -23,7 +23,7 @@ Your notes are ordinary text files (.txt, containing Markdown) together with the
 
 Because they are regular files in your own storage, you can open, copy, move, back up, or delete them with any app, at any time. The developer has no access to them.
 
-*TXT also keeps some information alongside your notes in the same storage, so it is the same on all your devices: the tags you use, notes in Recently Deleted, your templates, and a list of files that could not be imported, with the reason. A copy of each note's attachments and a search index are kept in the app's private storage on each device.
+*TXT also keeps some information alongside your notes in the same storage, so it is the same on all your devices: the tags you use, notes in Recently Deleted, your templates, a list of files that could not be imported, with the reason, and **Recovered Changes** — versions of a note that could not be saved to it (for example, when the note changed on another device at the same time), kept as separate notes so nothing is lost. A copy of each note's attachments and a search index are kept in the app's private storage on each device, and edits made before your library has finished opening are held there briefly (**Pending Changes**) until they are saved to your notes.
 
 ### Microphone and Speech Recognition
 
@@ -54,13 +54,15 @@ When you share text, links, images, or recordings to *TXT from another app's sha
 
 If a note uses calculations (#calc) and converts between currencies, *TXT downloads the European Central Bank's public daily exchange rates, at most about once a day. The request contains no information about you or your notes, and the rates are kept on your device.
 
+Depending on when you use it, the rates may not be the most up to date. The European Central Bank publishes its reference rates once per working day (not on weekends or its holidays), *TXT checks for new rates only after its copy is about a day old, and when you're offline it uses the last rates it downloaded. Tapping a currency answer shows the date of the rates it used. The rates are for information only and are not suitable for financial transactions. *TXT is not affiliated with or endorsed by the European Central Bank, and cannot guarantee that the rates will be available, complete, or accurate.
+
 ### Links and Note Previews
 
 *TXT does not load anything from the internet when you view a note. Web links in a note are opened in your browser only when you tap them, and note previews and exports never fetch remote images or other content.
 
 ### Spotlight Search
 
-If **Show in Spotlight** is on, *TXT adds your notes to Apple's on-device Spotlight index so you can find them from your device's search. The index is maintained by the operating system on that device. Turning the setting off removes your notes from it.
+*TXT adds your notes to Apple's on-device Spotlight index so you can find them from your device's search. The index is maintained by the operating system on that device and stays on it. To keep *TXT's notes out of search, turn off *TXT in your device's search settings (on iPhone and iPad, Settings ▸ Apps ▸ *TXT ▸ Search).
 
 ### Widgets, Controls, and Siri
 
@@ -92,7 +94,7 @@ Diagnostic and analytics information made available by Apple may be used to diag
 
 ## Data Retention and Deletion
 
-Your notes stay in your storage until you delete them. Deleted notes move to **Recently Deleted** for 30 days so you can restore them, and are then removed automatically. Imported originals in the **Originals** folder and files in **Not Imported** stay until you delete them yourself. You can also delete any of these files directly in Files or Finder.
+Your notes stay in your storage until you delete them. Deleted notes move to **Recently Deleted** for 30 days so you can restore them, and are then removed automatically. Notes in **Recovered Changes** stay until you delete them or add them back to a note. Imported originals in the **Originals** folder and files in **Not Imported** stay until you delete them yourself. You can also delete any of these files directly in Files or Finder.
 
 Data stored in iCloud Drive can be removed through the controls Apple provides, such as your Apple account's iCloud storage settings. Deleting the app may remove data stored on the device, but does not remove your notes from iCloud Drive.
 
