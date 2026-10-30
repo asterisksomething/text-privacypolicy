@@ -6,7 +6,7 @@ description: Quick Notes — Capture Anything, Anywhere
 
 # Privacy Policy
 
-**Last Updated: October 24, 2026**
+**Last Updated: October 29, 2026**
 
 *TXT ("asterisk text") is a notes app that keeps your notes as plain text files in your own storage. It does not require an account and does not collect your personal information on servers operated by the developer. This Privacy Policy explains how information is handled when you use *TXT on iPhone, iPad, Mac, and Apple Watch.
 
@@ -23,7 +23,7 @@ Your notes are ordinary text files (.txt, containing Markdown) together with the
 
 Because they are regular files in your own storage, you can open, copy, move, back up, or delete them with any app, at any time. The developer has no access to them.
 
-*TXT also keeps some information alongside your notes in the same storage, so it is the same on all your devices: the tags you use, notes in Recently Deleted, your templates, a list of files that could not be imported, with the reason, and **Recovered Changes** — versions of a note that could not be saved to it (for example, when the note changed on another device at the same time), kept as separate notes so nothing is lost. A copy of each note's attachments and a search index are kept in the app's private storage on each device, and edits made before your library has finished opening are held there briefly (**Pending Changes**) until they are saved to your notes.
+*TXT also keeps some information alongside your notes in the same storage, so it is the same on all your devices: the tags you use, notes in Recently Deleted, your templates, a list of files that could not be imported, with the reason, and **Recovered Changes** — versions of a note that could not be saved to it (for example, when the note changed on another device at the same time), kept as separate notes so nothing is lost, with the reason each was kept. When a note changes on two devices at once and *TXT combines the two sets of changes, it keeps a copy of both versions for 30 days in a hidden folder in the same storage, so the combined note can be checked or corrected. A copy of each note's attachments and a search index are kept in the app's private storage on each device, and edits made before your library has finished opening are held there briefly (**Pending Changes**) until they are saved to your notes. Each device also keeps, in its private storage, the recent versions of the notes it saved (used to combine edits made on two devices), and previews of your attachments so notes open quickly. These never leave the device.
 
 ### Microphone and Speech Recognition
 
@@ -94,7 +94,7 @@ Diagnostic and analytics information made available by Apple may be used to diag
 
 ## Data Retention and Deletion
 
-Your notes stay in your storage until you delete them. Deleted notes move to **Recently Deleted** for 30 days so you can restore them, and are then removed automatically. Notes in **Recovered Changes** stay until you delete them or add them back to a note. Imported originals in the **Originals** folder and files in **Not Imported** stay until you delete them yourself. You can also delete any of these files directly in Files or Finder.
+Your notes stay in your storage until you delete them. Deleted notes move to **Recently Deleted** for 30 days so you can restore them, and are then removed automatically. Notes in **Recovered Changes** stay until you delete them or add them back to a note. Copies of the versions behind a combined note are removed automatically after 30 days, and so are the recent versions each device keeps (the oldest go sooner once they take more than 50 MB). Attachment previews on a device are removed when the attachment is deleted, or when they take more than about 150 MB, and the system may also clear them to free space. Imported originals in the **Originals** folder and files in **Not Imported** stay until you delete them yourself. You can also delete any of these files directly in Files or Finder.
 
 Data stored in iCloud Drive can be removed through the controls Apple provides, such as your Apple account's iCloud storage settings. Deleting the app may remove data stored on the device, but does not remove your notes from iCloud Drive.
 
