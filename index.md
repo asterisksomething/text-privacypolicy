@@ -6,7 +6,7 @@ description: Quick Notes — Capture Anything, Anywhere
 
 # Privacy Policy
 
-**Last Updated: October 29, 2026**
+**Last Updated: November 1, 2026**
 
 *TXT ("asterisk text") is a notes app that keeps your notes as plain text files in your own storage. It does not require an account and does not collect your personal information on servers operated by the developer. This Privacy Policy explains how information is handled when you use *TXT on iPhone, iPad, Mac, and Apple Watch.
 
@@ -23,7 +23,23 @@ Your notes are ordinary text files (.txt, containing Markdown) together with the
 
 Because they are regular files in your own storage, you can open, copy, move, back up, or delete them with any app, at any time. The developer has no access to them.
 
-*TXT also keeps some information alongside your notes in the same storage, so it is the same on all your devices: the tags you use, notes in Recently Deleted, your templates, a list of files that could not be imported, with the reason, and **Recovered Changes** — versions of a note that could not be saved to it (for example, when the note changed on another device at the same time), kept as separate notes so nothing is lost, with the reason each was kept. When a note changes on two devices at once and *TXT combines the two sets of changes, it keeps a copy of both versions for 30 days in a hidden folder in the same storage, so the combined note can be checked or corrected. A copy of each note's attachments and a search index are kept in the app's private storage on each device, and edits made before your library has finished opening are held there briefly (**Pending Changes**) until they are saved to your notes. Each device also keeps, in its private storage, the recent versions of the notes it saved (used to combine edits made on two devices), and previews of your attachments so notes open quickly. These never leave the device.
+*TXT also keeps some information alongside your notes in the same storage, so it is the same on all your devices: the tags you use, your favorites, notes in Recently Deleted, your templates, a list of files that could not be imported, with the reason, and **Recovered Changes** — versions of a note that could not be saved to it (for example, when the note changed on another device at the same time), kept as separate notes so nothing is lost, with the reason each was kept. When a note changes on two devices at once and *TXT combines the two sets of changes, it keeps a copy of both versions for 30 days in a hidden folder in the same storage, so the combined note can be checked or corrected. A copy of each note's attachments and a search index are kept in the app's private storage on each device, and edits made before your library has finished opening are held there briefly (**Pending Changes**) until they are saved to your notes. Each device also keeps, in its private storage, the recent versions of the notes it saved (used to combine edits made on two devices), and previews of your attachments so notes open quickly. These never leave the device.
+
+### Encrypted Notes
+
+You can encrypt any note except your pinned note. Its text and attachments are encrypted on your device before they are saved (with AES-GCM and a 256-bit key of its own for each note), so they can't be read in Files, Finder, iCloud Drive, or any other app. The note's **title** (its first line) and its file name are not encrypted, and stay readable wherever the file is.
+
+* **Your notes key**, which the key for each note is made from, is kept in your device's keychain. When iCloud Keychain is on, Apple syncs it, end-to-end encrypted, to your other devices, so they can open your encrypted notes too.
+* **Your notes password** is never stored. A copy of your notes key, locked with your password, is kept in a hidden file in your library, so a device without the key can open encrypted notes once you type the password. The developer cannot see or recover your notes password, and cannot open your encrypted notes.
+* **While a note is unlocked**, its text is decrypted only in the app's memory, and its attachments are decrypted into the app's private cache on that device so they can be shown. Those copies are deleted when the note locks. No previews of an encrypted note's attachments are kept.
+* **When you encrypt a note**, *TXT deletes its unencrypted attachments from your library (they don't go to Recently Deleted) and the older saved versions of its file. Each of your devices also deletes the recent versions of the note it kept, the next time *TXT there reads your notes. Copies made before the note was encrypted aren't changed: a backup, a copy in another app, a recovered version in **Recovered Changes**, or a combined note's earlier versions (removed after 30 days).
+* **Encrypted notes are left out** of Spotlight, widgets, Siri and Shortcuts, and the share sheet's list of notes. Search in *TXT finds them by title only, or not at all if you turn off **Show Titles** in **Settings → Encrypted Notes**.
+
+Turning encryption off saves the note and its attachments unencrypted again.
+
+### Face ID and Touch ID
+
+*TXT can unlock encrypted notes with Face ID, Touch ID, or your device passcode. Apple's operating system handles this: *TXT is told only whether it succeeded, and never receives your face, fingerprint, or passcode data. Optional — turn off **Use Face ID** (or **Use Touch ID**) in **Settings → Encrypted Notes** to use your notes password instead.
 
 ### Microphone and Speech Recognition
 
@@ -62,13 +78,13 @@ Depending on when you use it, the rates may not be the most up to date. The Euro
 
 ### Spotlight Search
 
-*TXT adds your notes to Apple's on-device Spotlight index so you can find them from your device's search. The index is maintained by the operating system on that device and stays on it. To keep *TXT's notes out of search, turn off *TXT in your device's search settings (on iPhone and iPad, Settings ▸ Apps ▸ *TXT ▸ Search).
+*TXT adds your notes to Apple's on-device Spotlight index so you can find them from your device's search. Encrypted notes are never added. The index is maintained by the operating system on that device and stays on it. To keep *TXT's notes out of search, turn off *TXT in your device's search settings (on iPhone and iPad, Settings ▸ Apps ▸ *TXT ▸ Search).
 
 ### Widgets, Controls, and Siri
 
-Widgets and Control Center controls can show your note titles and the beginning of your notes. To make this possible, *TXT keeps a small summary of your notes in storage shared between the app and its widgets on the same device. This stays on your device and is visible wherever you have chosen to show a widget, including the Lock Screen.
+Widgets and Control Center controls can show your note titles and the beginning of your notes. To make this possible, *TXT keeps a small summary of your notes in storage shared between the app and its widgets on the same device. This stays on your device and is visible wherever you have chosen to show a widget, including the Lock Screen. Encrypted notes are never included.
 
-Siri and Shortcuts can create, find, and add to notes when you ask them to. Anything Siri or a shortcut passes to *TXT is saved as a note in your storage.
+Siri and Shortcuts can create, find, and add to notes when you ask them to. Anything Siri or a shortcut passes to *TXT is saved as a note in your storage. They can't find or read encrypted notes, and anything sent to one is saved as a new note instead.
 
 ### Apple Watch
 
@@ -100,7 +116,7 @@ Data stored in iCloud Drive can be removed through the controls Apple provides, 
 
 ## Security
 
-*TXT is designed to minimize the collection and transmission of personal information. Your notes are protected by the security of your device and, in iCloud Drive, by Apple's iCloud encryption. If you turn on Advanced Data Protection for your Apple account, iCloud Drive is end-to-end encrypted. No method of electronic storage or transmission can be guaranteed to be completely secure.
+*TXT is designed to minimize the collection and transmission of personal information. Your notes are protected by the security of your device and, in iCloud Drive, by Apple's iCloud encryption. If you turn on Advanced Data Protection for your Apple account, iCloud Drive is end-to-end encrypted. Notes you encrypt in *TXT are also encrypted by the app itself (see **Encrypted Notes**). If you forget your notes password and your notes key isn't in your iCloud Keychain, your encrypted notes can't be opened, and the developer can't recover them. No method of electronic storage or transmission can be guaranteed to be completely secure.
 
 ## Children's Privacy
 
