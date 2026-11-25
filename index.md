@@ -6,7 +6,7 @@ description: Quick Notes — Capture Anything, Anywhere
 
 # Privacy Policy
 
-**Last Updated: November 1, 2026**
+**Last Updated: November 24, 2026**
 
 *TXT ("asterisk text") is a notes app that keeps your notes as plain text files in your own storage. It does not require an account and does not collect your personal information on servers operated by the developer. This Privacy Policy explains how information is handled when you use *TXT on iPhone, iPad, Mac, and Apple Watch.
 
@@ -23,11 +23,23 @@ Your notes are ordinary text files (.txt, containing Markdown) together with the
 
 Because they are regular files in your own storage, you can open, copy, move, back up, or delete them with any app, at any time. The developer has no access to them.
 
-*TXT also keeps some information alongside your notes in the same storage, so it is the same on all your devices: the tags you use, your favorites, notes in Recently Deleted, your templates, a list of files that could not be imported, with the reason, and **Recovered Changes** — versions of a note that could not be saved to it (for example, when the note changed on another device at the same time), kept as separate notes so nothing is lost, with the reason each was kept. When a note changes on two devices at once and *TXT combines the two sets of changes, it keeps a copy of both versions for 30 days in a hidden folder in the same storage, so the combined note can be checked or corrected. A copy of each note's attachments and a search index are kept in the app's private storage on each device, and edits made before your library has finished opening are held there briefly (**Pending Changes**) until they are saved to your notes. Each device also keeps, in its private storage, the recent versions of the notes it saved (used to combine edits made on two devices), and previews of your attachments so notes open quickly. These never leave the device.
+Each notebook is a folder in that storage, and each page is one of these files. A page you write or draw on also has a handwriting file, kept with the note's attachments, that holds your strokes; the words read from your handwriting are saved in the note's own text.
+
+*TXT also keeps some information alongside your notes in the same storage, so it is the same on all your devices: each notebook's settings (its title, cover, paper, fonts and layout, the order of its pages, and its worn look, described below), the order of the notebooks on your shelf, each page's own paper settings, which alerts you've already seen, the tags you use, your favorites, notes in Recently Deleted, your templates, a list of files that could not be imported, with the reason, and **Recovered Changes** — versions of a note that could not be saved to it (for example, when the note changed on another device at the same time), kept as separate notes so nothing is lost, with the reason each was kept. When a note changes on two devices at once and *TXT combines the two sets of changes, it keeps a copy of both versions for 30 days in a hidden folder in the same storage, so the combined note can be checked or corrected. A copy of each note's attachments and a search index are kept in the app's private storage on each device, and edits made before your library has finished opening are held there briefly (**Pending Changes**) until they are saved to your notes. Each device also keeps, in its private storage, the recent versions of the notes it saved (used to combine edits made on two devices), handwriting not yet saved to its note (never for an encrypted note), previews of your attachments and web links so notes open quickly, and the **My Handwriting** font if you make one. These never leave the device.
+
+If you turn on **Show Drawings in Other Apps**, each page you write or draw on also saves a picture of its handwriting in your storage, linked in the note's file, so other apps can show it. Encrypted notes never get one.
+
+### Handwriting
+
+*TXT reads your handwriting using Apple's Vision framework, on your device, so search, titles and other apps have your words. Nothing is sent anywhere for this. Your strokes are saved only in your own storage, as described above. Apple Pencil gestures, such as double-tap and squeeze, are handled by your device and only tell *TXT which action to take.
+
+### Notebooks' Worn Look
+
+If you turn on **Cover Wears With Use** or **Pages Wear With Use** for a notebook, *TXT counts how often that notebook is opened and closed, its page turns, and how much its cover has been rubbed, along with when it became a notebook. These counts are kept in the notebook's settings in your storage, each device's separately, and are used only to draw the notebook's worn look. *TXT never uses health, motion, or location data for this.
 
 ### Encrypted Notes
 
-You can encrypt any note except your pinned note. Its text and attachments are encrypted on your device before they are saved (with AES-GCM and a 256-bit key of its own for each note), so they can't be read in Files, Finder, iCloud Drive, or any other app. The note's **title** (its first line) and its file name are not encrypted, and stay readable wherever the file is.
+You can encrypt any note except your pinned note, or a whole notebook, which encrypts each new page in it as it's first saved. A note's text, handwriting, and attachments are encrypted on your device before they are saved (with AES-GCM and a 256-bit key of its own for each note), so they can't be read in Files, Finder, iCloud Drive, or any other app. The note's **title** (its first line) and its file name are not encrypted, and stay readable wherever the file is.
 
 * **Your notes key**, which the key for each note is made from, is kept in your device's keychain. When iCloud Keychain is on, Apple syncs it, end-to-end encrypted, to your other devices, so they can open your encrypted notes too.
 * **Your notes password** is never stored. A copy of your notes key, locked with your password, is kept in a hidden file in your library, so a device without the key can open encrypted notes once you type the password. The developer cannot see or recover your notes password, and cannot open your encrypted notes.
@@ -56,7 +68,7 @@ Apple's speech recognition turns your words into text, both for dictation and wh
 
 ### Text Recognition
 
-When you use **Extract Text**, or import a photo or scanned PDF, *TXT reads the text in the image using Apple's Vision framework, on your device. Nothing is sent anywhere for this.
+When you use **Extract Text**, write by hand, or import a photo or scanned PDF, *TXT reads the text in the image or handwriting using Apple's Vision framework, on your device. Nothing is sent anywhere for this.
 
 ### Importing Files
 
@@ -74,7 +86,11 @@ Depending on when you use it, the rates may not be the most up to date. The Euro
 
 ### Links and Note Previews
 
-*TXT does not load anything from the internet when you view a note. Web links in a note are opened in your browser only when you tap them, and note previews and exports never fetch remote images or other content.
+A web link in a note is opened in your browser only when you tap it.
+
+When a link in a note is shown as a **preview card** (a Small, Medium, or Large preview, chosen in the link's menu or when it was shared), *TXT uses Apple's LinkPresentation framework to fetch the page's title, picture, and icon from that website, once, and keeps them in the app's cache on that device so the card shows offline. Likewise, when you share a link to *TXT from an app that doesn't give the page's title, *TXT reads the title from the website. As with visiting a website in your browser, the website can see that request, including your device's IP address. Nothing about you or your notes is sent with it. A link shown as plain text is never fetched.
+
+Note previews and exports never fetch remote images or other content.
 
 ### Spotlight Search
 
@@ -82,7 +98,7 @@ Depending on when you use it, the rates may not be the most up to date. The Euro
 
 ### Widgets, Controls, and Siri
 
-Widgets and Control Center controls can show your note titles and the beginning of your notes. To make this possible, *TXT keeps a small summary of your notes in storage shared between the app and its widgets on the same device. This stays on your device and is visible wherever you have chosen to show a widget, including the Lock Screen. Encrypted notes are never included.
+Widgets and Control Center controls can show your note titles and the beginning of your notes. To make this possible, *TXT keeps a small summary of your notes in storage shared between the app and its widgets on the same device. For a handwritten page in the **Selected Note** widget, this includes a picture of the top of the page. This stays on your device and is visible wherever you have chosen to show a widget, including the Lock Screen. Encrypted notes are never included.
 
 Siri and Shortcuts can create, find, and add to notes when you ask them to. Anything Siri or a shortcut passes to *TXT is saved as a note in your storage. They can't find or read encrypted notes, and anything sent to one is saved as a new note instead.
 
@@ -110,7 +126,7 @@ Diagnostic and analytics information made available by Apple may be used to diag
 
 ## Data Retention and Deletion
 
-Your notes stay in your storage until you delete them. Deleted notes move to **Recently Deleted** for 30 days so you can restore them, and are then removed automatically. Notes in **Recovered Changes** stay until you delete them or add them back to a note. Copies of the versions behind a combined note are removed automatically after 30 days, and so are the recent versions each device keeps (the oldest go sooner once they take more than 50 MB). Attachment previews on a device are removed when the attachment is deleted, or when they take more than about 150 MB, and the system may also clear them to free space. Imported originals in the **Originals** folder and files in **Not Imported** stay until you delete them yourself. You can also delete any of these files directly in Files or Finder.
+Your notes stay in your storage until you delete them. Deleting a notebook deletes its pages the same way. Deleted notes move to **Recently Deleted** for 30 days so you can restore them, and are then removed automatically. Notes in **Recovered Changes** stay until you delete them or add them back to a note. Copies of the versions behind a combined note are removed automatically after 30 days, and so are the recent versions each device keeps (the oldest go sooner once they take more than 50 MB). Attachment previews on a device are removed when the attachment is deleted, or when they take more than about 150 MB, and the system may also clear them, and link previews, to free space. Imported originals in the **Originals** folder and files in **Not Imported** stay until you delete them yourself. You can also delete any of these files directly in Files or Finder.
 
 Data stored in iCloud Drive can be removed through the controls Apple provides, such as your Apple account's iCloud storage settings. Deleting the app may remove data stored on the device, but does not remove your notes from iCloud Drive.
 
